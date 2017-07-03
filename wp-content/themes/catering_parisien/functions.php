@@ -13,9 +13,26 @@ array(
 // permet le support des vignettes article
 add_theme_support( 'post-thumbnails' );
 
+/** Register taxonomy for images */
+function olab_register_taxonomy_for_images() {
+    register_taxonomy_for_object_type( 'category', 'attachment' );
+}
+add_action( 'init', 'olab_register_taxonomy_for_images' );
+
+/** Add a category filter to images */
+function olab_add_image_category_filter() {
+    $screen = get_current_screen();
+    if ( 'upload' == $screen->id ) {
+        $dropdown_options = array( 'show_option_all' => __( 'View all categories', 'olab' ), 'hide_empty' => false, 'hierarchical' => true, 'orderby' => 'name', );
+        wp_dropdown_categories( $dropdown_options );
+    }
+}
+add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
+
+
+
 if (!is_admin()) {
     wp_enqueue_style('style', get_template_directory_uri() . '/main.css');
-
 }
 
 

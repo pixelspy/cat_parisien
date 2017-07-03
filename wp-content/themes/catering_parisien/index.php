@@ -16,22 +16,17 @@
  */
 
 get_header(); the_post(); ?>
+    <div class="logo-cat">
+    </div>
+    <div class="row">
 
-    <div class="wrap">
-
-        <div id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-                    <div class="entry-content">
-                        <h1> <?php the_title(); ?></h1>
-                        <?php the_post_thumbnail()?>
+        <div id="primary" class="col-lg-12">
+                    <div class="">
+                        <h1 id="titre-main"> <?php the_title(); ?></h1>
+                        <?php the_post_thumbnail('medium-large', ['class' => 'img-fluid center-block'])?>
                         <p><?php the_content(); ?></p>
                     </div><!-- .entry-content -->
 
-                </article><!-- #post-## -->
-
-            </main><!-- #main -->
         </div><!-- #primary -->
     </div><!-- .wrap -->
 
