@@ -24,24 +24,17 @@
 
 <body >
 <div id="page">
-    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
-
     <header id="masthead" class="site-header" role="banner">
 
-    <nav class="container navbar navbar-default">
-        <div class="row col-lg-12">
-        <?php wp_nav_menu (array(
-                'theme_location' => 'top-menu',
-                'menu_class' => 'nav navbar-nav navbar-right'
-        ));?>
-        </div>
-    </nav>
-
-
-
-
+        <nav class="container navbar">
+            <div class="row col-lg-12 ">
+            <?php wp_nav_menu (array(
+                    'theme_location' => 'top-menu',
+                    'menu_class' => 'nav navbar-nav navbar-right'
+            ));?>
+            </div>
+        </nav>
     </header><!-- #masthead -->
-
 
 
     <div class="site-content-contain">

@@ -16,6 +16,11 @@
  */
 
 get_header(); the_post(); ?>
+
+<?php
+include 'logo.php';
+?>
+
     <div class="logo-cat">
     </div>
     <div class="row">

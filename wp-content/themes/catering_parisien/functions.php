@@ -42,8 +42,9 @@ function get_images_from_media_library() {
         'post_type' => 'attachment',
         'post_mime_type' =>'image',
         'post_status' => 'inherit',
-        'posts_per_page' => 5,
-        'orderby' => 'rand'
+        'posts_per_page' => 10,
+        'orderby' => 'rand',
+
     );
     $query_images = new WP_Query( $args );
     $images = array();
@@ -145,4 +146,10 @@ if( isset($_POST['cp-contact-submit']) && $_POST['cp-contact-submit']==1) {
         $message = __('Merci de renseigner tous les champs obligatoires signalés en rouge avant la validation finale');
 
     }
+}
+
+function printR($data){
+    echo '<pre>';
+    print_r($data);
+    echo'</pre>';
 }

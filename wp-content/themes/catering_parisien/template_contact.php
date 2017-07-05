@@ -6,58 +6,83 @@ get_header();
 ?>
 
 
+<?php include 'logo.php'; ?>
 
+<div class="row form-contact">
 
-<div class="main col-12">
+    <?php if(count($_SESSION['cp-contact-error'])>0){ ?>
+        <ul class="cp-error-list">
+            <?php  foreach( $_SESSION['cp-contact-error'] AS $error ){ ?>
+                <li> <?php echo $error; ?></li>
+            <?php } ?>
+        </ul>
+    <?php } ?>
 
-    <div class="title-contact">
-        <h1>Nous contacter</h1>
-        <p>
-            Tous les champs sont obligatoires
-        </p>
-    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <div class=" form-style well well-sm">
+            <form class="form-horizontal" action="" method="post">
 
-    <div class="formulaire-contact">
-
-        <?php if(count($_SESSION['cp-contact-error'])>0){ ?>
-            <ul class="cp-error-list">
-                <?php  foreach( $_SESSION['cp-contact-error'] AS $error ){ ?>
-                    <li> <?php echo $error; ?></li>
-                <?php } ?>
-            </ul>
-        <?php } ?>
-
-
-        <form action="#" method="post" >
-            <div>
                 <?php if(isset($_SESSION['smv-contact-error']['smv-contact-nom'])){ ?>
                     <span class="smv-contact-error">Ce champs est obligatoire. </span>
                 <?php } ?>
 
+                <fieldset>
+                    <legend class="text-center">Nous contacter</legend>
 
-                <input id="cp-contact-nom" type="text" name="cp-contact-nom" placeholder="Nom-Prénom / Name-Firstname"  />
-            </div>
+                    <!-- Name input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Nom/Name</label>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="cp-contact-nom" placeholder="Jean Dupont"  />
+                        </div>
+                    </div>
 
-            <div>
-                <input id="cp-contact-email" type="email" name="cp-contact-email" placeholder="Email" />
-            </div>
+                    <!-- Email input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="email">Votre E-mail</label>
+                        <div class="col-md-9">
+                            <input class="form-control" type="email" name="cp-contact-email" placeholder="j.dupont@gmail.com" />
 
-            <div>
-                <input id="cp-contact-tel" type="text" name="cp-contact-tel" placeholder="Téléphone / Phone" />
-            </div>
+                        </div>
+                    </div>
 
-            <div>
-                <input id="cp-contact-obj" type="text" name="smv-contact-obj" placeholder="Objet" >
-            </div>
-            <div>
-                <textarea id="cp-contact-msg" name="cp-contact-msg" placeholder="Message" ></textarea>
-            </div>
-            <button type="submit">ENVOYER / SEND</button>
-            <input type="hidden" name="cp-contact-submit" value="1" />
-        </form>
+                    <!-- Téléphone input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Téléphone/Phone</label>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="cp-contact-telephone" placeholder="0607080910"  />
+                        </div>
+                    </div>
+
+                    <!-- Object input-->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="name">Objet/Object</label>
+                        <div class="col-md-9">
+                            <input class="form-control" id="cp-contact-obj" type="text" name="cp-contact-obj" placeholder="Bonjour" >
+
+                        </div>
+                    </div>
+
+                    <!-- Message body -->
+                    <div class="form-group">
+                        <label class="col-md-3 control-label" for="message">Votre message</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control" id="cp-contact-msg" name="cp-contact-msg" placeholder="Insérez votre message ici" rows="5" ></textarea>
+
+                        </div>
+                    </div>
+
+                    <!-- Form actions -->
+                    <div class="form-group">
+                        <div class="col-md-12 text-right">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
-</div>
 
 <?php
 get_footer();
