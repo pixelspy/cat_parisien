@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63f9f6e7-f52c-48ef-bbe0-9be962fb5163" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/logo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_template_gallery.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-16.42.00-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/Screen-Shot-2017-07-03-at-16.42.00.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/land-1024x499.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/land-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/land-300x146.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/land-768x374.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/uploads/2017/07/land.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_common.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_common.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_header.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_template_contact.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/_template_contact.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/main.scssc" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/.sass-cache/4a781de6dba25808a6ca89e3b3479f1df21b9e91/main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/main.css" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_common.scss" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_header.scss" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_template_contact.scss" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/_template_contact.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/main.scss" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/template_contact.php" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/template_contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/catering_parisien/template_gallery.php" afterPath="$PROJECT_DIR$/wp-content/themes/catering_parisien/template_gallery.php" />
-    </list>
+    <list default="true" id="63f9f6e7-f52c-48ef-bbe0-9be962fb5163" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,8 +109,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1699" />
-    <option name="y" value="24" />
+    <option name="x" value="1712" />
+    <option name="y" value="40" />
     <option name="width" value="1884" />
     <option name="height" value="999" />
   </component>
@@ -379,23 +354,23 @@
       <updated>1499075566016</updated>
       <workItem from="1499075567283" duration="9194000" />
       <workItem from="1499101216986" duration="69000" />
-      <workItem from="1499242890031" duration="14317000" />
+      <workItem from="1499242890031" duration="14588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23580000" />
+    <option name="totallyTimeSpent" value="23851000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1699" y="24" width="1884" height="999" extended-state="0" />
+    <frame x="1712" y="40" width="1884" height="999" extended-state="0" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16295117" sideWeight="0.2933526" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16295117" sideWeight="0.7066474" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16295117" sideWeight="0.29139784" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16295117" sideWeight="0.70860213" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25591397" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25591397" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
