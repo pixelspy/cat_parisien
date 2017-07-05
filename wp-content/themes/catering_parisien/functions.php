@@ -1,5 +1,6 @@
-<?php // enregistre les menus
+<?php
 
+// enregistre les menus
 add_action( 'init', 'cp_register_menus' );
 function cp_register_menus() {
 register_nav_menus(
@@ -30,14 +31,44 @@ function olab_add_image_category_filter() {
 add_action( 'restrict_manage_posts', 'olab_add_image_category_filter' );
 
 
-
+// les feuilles de style pour le site et pas backoffice wordpress
 if (!is_admin()) {
     wp_enqueue_style('style', get_template_directory_uri() . '/main.css');
 }
 
+// get images
+function get_images_from_media_library() {
+    $args = array(
+        'post_type' => 'attachment',
+        'post_mime_type' =>'image',
+        'post_status' => 'inherit',
+        'posts_per_page' => 5,
+        'orderby' => 'rand'
+    );
+    $query_images = new WP_Query( $args );
+    $images = array();
+    foreach ( $query_images->posts as $image) {
+        $images[]= $image->guid;
+    }
+    return $images;
+}
 
+// HTML Gallery
+function display_images_from_media_library() {
 
+    $imgs = get_images_from_media_library();
+    $html = '<div id="media-gallery">';
 
+    foreach($imgs as $img) {
+
+        $html .= '<img src="' . $img . '" alt="" />';
+
+    }
+
+    $html .= '</div>';
+
+    return $html;
+}
 
 
 // gestion du formulaire de contact
@@ -71,10 +102,9 @@ if( isset($_POST['cp-contact-submit']) && $_POST['cp-contact-submit']==1) {
         $_SESSION['cp-contact-error'][] = 'Le message est obligatoire';
     }
 
-
     if ($valide) {
 
-// recupere post contact
+// recupère post contact
         $dest_email = get_post_meta(14, 'contact_mail');
 
         $content = '<p>Vous avez reçu une demande de contact:
@@ -115,5 +145,4 @@ if( isset($_POST['cp-contact-submit']) && $_POST['cp-contact-submit']==1) {
         $message = __('Merci de renseigner tous les champs obligatoires signalés en rouge avant la validation finale');
 
     }
-
 }
