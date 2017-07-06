@@ -1,4 +1,33 @@
+
+
+
 .slides2{
-  margin: 0px 100px 100px 100px;
+
 }
+
+.imgStyle{
+  ////margin: 20px 0px 20px 0px;
+  //@media all and (max-width: 768px){
+  //  margin: 10px;
+  //  width: 80%;
+  //}
+}
+
+.item {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  border: none;
+}
+.rowImg {
+  /* column width */
+  -moz-column-width: 19em;
+  -webkit-column-width: 19em;
+
+  /* space between columns */
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+}
+
+
 

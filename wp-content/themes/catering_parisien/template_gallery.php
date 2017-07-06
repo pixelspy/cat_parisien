@@ -10,20 +10,14 @@ get_header();
 include 'logo.php';
 ?>
 
-<div class="slides2 col-lg-12">
+<div class="slides2 rowImg">
     <?php
-    $index = 0;
     $query = new WP_Query( array( 'category_name' => 'gallerie', 'post_type' => 'attachment', 'post_status' => 'any' ) );
 
-    foreach ($query->posts as $post): ?>
-
-        <img src=" <?php echo $post->guid ?>" />
-        <?php $index++; ?>
-        <?php if ( $index % 2 == 0 && $index !=count($query->posts) ) : ?>
+    foreach ($query->posts as $post) { ?>
+        <div class="item well"><img class="imgStyle img-responsive" src=" <?php echo $post->guid ?>" /></div>
+   <?php } ?>
 </div>
 
-<div class="slides2 main col-12">
-    <?php endif; ?>
-    <?php endforeach; ?>
-</div>
+
 

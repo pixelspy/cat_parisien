@@ -11,6 +11,23 @@ div.logo-static{
   z-index: 1;
 }
 
-.logo-img{
-  width: 300px;
+
+  .logo-img{
+    transition: 0.3s;
+    width: 300px;
+    @media all and (max-width: 767px){
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+
+
+#primary{
+  p{
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
+
